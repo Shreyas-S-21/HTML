@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ordered unordered and definition lists. nested -->
+    <ol >
+        <li>Username</li>
+        <li>Username</li>
+        <li>Username</li>
+    </ol>
+    <ul>
+        <li>Username</li>
+        <li>Username</li>
+        <li>Username</li>
+    </ul>
+    <table>
+        <caption>description</caption>
+        <thead><tr>
+            <th>col1</th>
+            <th>col2</th>
+            <th colspan="2">combine</th>
+        </tr></thead>
+        <tbody><tr>
+            <td>val1</td>
+            <td>val2</td>
+            <td>val3</td>
+            <td>val4</td>
+        </tr></tbody>
+    </table>
+    <hr>
+    <!-- forms are used for user input -->
+    <form action="/validate.go" method="post">
+        <input type="text" name="username" placeholder="Enter your username">
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email">
+        <input type="number" name="age" min="1" max="100" required>
+        <input type="p" required pattern="[0-9]{10}">
+        <input type="date" name="dob">
+        <label for="121">Choose a file</label>
+        <input type="file" name="pdf " id="121" accept=".pdf">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="checkbox" name="subscribe" value="newsletter"> Subscribe to newsletter
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <button type="menu">menu</button>
+        <br>
+        <hr>
+    </form>
+    <form>
+        <!-- label is used for screen readability. helps mention content to readers. also improves workability -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="phoneno">Phone No</label>
+        <input type="tel" id="phoneno" name="phoneno">
+        <p>gender</p>
+        <label>
+        <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label >
+        <input type="radio" name="gender" value="female"> Female
+        </label>
+        <button type="submit">Submit</button>
+        <br>
+        <!-- If you prioritize accessibility and want to simplify your code, it's a good idea to use the <input> inside the <label>. If you prioritize more control over styling it’s better to use the for and id attributes and keep them separate. -->
+        <textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+        <br>
+        <textarea name="feedback" rows="4" cols="50">Your feedback here. Prefilled</textarea>
+        <br>
+        <!-- select option -->
+        <label for="123">choose vegetable</label>
+        <select id="123" name="fruits" >
+            <option value="none" selected>select</option><!--default selected-->
+            <option value="apple">apple</option>
+            <option value="mango">mango</option>
+            <option value="orange">orange</option>
+            <option value="pine">pine</option>
+            <option value="chikoo">chikoo</option>
+            <option value="banana">banana</option>
+        </select>
+        </form>
+    <input type="text" placeholder="does not submit"><!--this wont send data since it is outside form-->
+
+
+</body>
+</html>
