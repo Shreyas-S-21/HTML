@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!--instructs the browser that it is html5-->
+<html lang="en">
+<head><!--contents that are ot displayed in browser by contains metadata-->
+    <meta charset="UTF-8"><!--unicode transformation format has standards for all languages as well as emojis-->
+    <meta name="description" content="Learning html"><!--has info for seo-->
+    <meta name="keywords" content="html, SEO, web development, meta tags"><!--for seo optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport is how to view and content is standard description-->
+    <meta name="author" content="Shreyas S"><!--has info of author-->
+    <link rel="stylesheet" href="styles.css"><!--contains relation and hypertext reference . either file name or url . not executable just display
+    hence through link-->
+    <script src="script.js"></script><!--sourc of the executable code-->
+    <title>Document</title><!--title to be displlayed on the tab-->
+    <noscript>contains data for showing message if js is disabled in user browser</noscript>
+<!-- ctrl / for comments -->
+
+</head>
+<body>
+    <h1> नमस्ते       home        insert      profile</h1><!--use only once per page for better seo -->
+    <h2>नमस्ते       home        insert      profile</h2>
+    <h3> नमस्ते       home        insert      profile</h3>
+    <h4>नमस्ते       home        insert      profile</h4>
+    <h5> नमस्ते       home        insert      profile</h5>
+    <h6>नमस्ते       home        insert      profile</h6>
+    <!-- use headings mostly based on importance . for size u can alter using css -->
+    <p>This is a paragraph
+        India, officially the Republic of India, is a country in South Asia, known as the most populous country in the world and the seventh-largest by area. Bounded by the Indian Ocean to the south, the Arabian Sea to the southwest, and the Bay of Bengal to the southeast, it shares land borders with Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar. India also has maritime borders with Sri Lanka, Maldives, and Indonesia. Its capital is New Delhi, while Mumbai is the largest city by population. India is a federal parliamentary republic, with Droupadi Murmu as its President and Narendra Modi as its Prime Minister. The country gained independence from the United Kingdom on **15 August   </p>
+        <!-- select the set of lines . go to settings. command pallete . toggle word wrap. brings set of lines under 1 line  -->
+
+    <!-- anchor tags are used for navigation from one page to other or has to do with links/downloads -->
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/India">wikipedia india</a><!--opens a page of the url in same tab. default target is self-->
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/India" target="_blank">wikipedia india(new tab)</a> <!--opens a page of the url in different tab-->
+    <br><br>
+    <a href="home.html">home tab</a> <!--links to home page tab-->
+    <br><br>
+    <a href="#contact">Go to Contact Section</a><!--links to specific section of same page-->
+    <br><br>
+    <a href="mailto:shreyass2104@gmail.com">Email Me</a><!--send a mail to someone-->
+    <br><br>
+    <a href="Sodexo.pdf" download>Download in same folder</a><!--wont directly download due to securityy reasons-->
+    <br><br>
+    <a href="Sodexo1.pdf" download>Download inside same subfolder</a><!--wont directly download due to securityy reasons-->
+    <br>
+    <br>
+    <a href="../../SodexoParent.pdf" download>Download File Different folder</a><!--(security issue. download in different folder(2 levels up)-->
+    <br><br>
+    <a href="Sodexo1.pdf" >View File</a>
+    <br><br>
+    <a href="https://www.youtube.com/results?search_query=sql+full+course" title="Go to Course">Sql Course with title for hover</a><!--while u hover
+    u see title-->
+    <br><br>
+    <a href="https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe" download>Download git (External Server)</a>
+    <br><br>
+    <a href="../../SodexoParent.pdf" >View parent File</a>
+    <br>
+    <br>
+    <a href ="../../text.txt" download>Text document</a><!--security reasons wont download directly. view and then download-->
+    <br>
+    <img src="https://imgs.search.brave.com/2xhgDGKgniqNRtKeOJut-QeB8PSI9g3sJQizIvk41XQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzIxL0luZGlhLF9i/eV9Ccml0aXNoX0lu/Zm9ybWF0aW9uX1Nl/cnZpY2VzLF8xOTQ0/LmpwZw" alt="india" height="150">
+    <img src="rengoku.jpg" alt="rengoku image" height="60">
+    <img src="/image/rengoku.jpg" alt="rengoku image" height="100">
+    <img src="../../cloud.jpg" alt="Cloud Image">
+
+    
+    <!--line 37-->  <h2 id="contact">Contact Us</h2>
+
+</body>
+</html>
